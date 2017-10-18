@@ -1,0 +1,42 @@
+﻿@model Routine_Manage.Models.Student
+@{
+    ViewData["Title"] = "Student";
+}
+<form asp-action="Student">
+    <div class="form-horizontal">
+        <h2>Student Login</h2>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+       
+        <div class="form-group">
+            <label asp-for="Name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+
+      
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Login" class="btn btn-default" />
+            </div>
+        </div>
+@if (ViewBag.Message != null)
+{ <div>@ViewBag.Message</div>}
+    </div> 
+   
+</form>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

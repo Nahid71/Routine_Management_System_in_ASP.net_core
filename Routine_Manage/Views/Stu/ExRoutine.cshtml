@@ -1,0 +1,54 @@
+@model IEnumerable<Routine_Manage.Models.ExamRoutine>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Exam Routine</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CStageNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomNoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SCodeNavigation.SCode)
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CStage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SCode)
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

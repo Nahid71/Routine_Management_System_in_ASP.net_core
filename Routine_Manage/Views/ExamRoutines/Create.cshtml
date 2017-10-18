@@ -1,0 +1,67 @@
+@model Routine_Manage.Models.ExamRoutine
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>ExamRoutine</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Serial" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Serial" class="form-control" />
+                <span asp-validation-for="Serial" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="SCode" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="SCode" class ="form-control" asp-items="ViewBag.SCode"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="CStage" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="CStage" class ="form-control" asp-items="ViewBag.CStage"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="RoomNo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="RoomNo" class ="form-control" asp-items="ViewBag.RoomNo"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Date" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Time" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
