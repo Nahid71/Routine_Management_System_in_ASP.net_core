@@ -1,0 +1,9 @@
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\bin\Debug\netcoreapp1.1\Routine_Manage.deps.json
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\bin\Debug\netcoreapp1.1\Routine_Manage.runtimeconfig.json
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\bin\Debug\netcoreapp1.1\Routine_Manage.runtimeconfig.dev.json
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\bin\Debug\netcoreapp1.1\Routine_Manage.dll
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\obj\Debug\netcoreapp1.1\Routine_Manage.csprojResolveAssemblyReference.cache
+c:\users\nahid\documents\visual studio 2017\Projects\Routine_Manage\Routine_Manage\obj\Debug\netcoreapp1.1\Routine_Manage.AssemblyInfo.cs
+C:\Users\Nahid\Documents\Visual Studio 2017\Projects\Routine_Manage\Routine_Manage\bin\Debug\netcoreapp1.1\Routine_Manage.pdb
+C:\Users\Nahid\Documents\Visual Studio 2017\Projects\Routine_Manage\Routine_Manage\obj\Debug\netcoreapp1.1\Routine_Manage.dll
+C:\Users\Nahid\Documents\Visual Studio 2017\Projects\Routine_Manage\Routine_Manage\obj\Debug\netcoreapp1.1\Routine_Manage.pdb
