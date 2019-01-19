@@ -10,7 +10,7 @@ for data base run sql file in sql server tab in VS after that install all the de
 
 ## Prerequisites
 
-you need Visula Studio getter than 2017 
+you need Visual Studio which is getter than 2016 
 
 ## Built With
 Asp.net core 1.0
